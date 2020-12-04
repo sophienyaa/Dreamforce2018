@@ -1,7 +1,19 @@
 {
     "orgName": "mickwheeler Company",
     "edition": "Developer",
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"]
+    "features": [],
+    "settings": {
+      "lightningExperienceSettings": {
+        "enableS1DesktopEnabled": true
+      },
+      "securitySettings": {
+        "passwordPolicies": {
+          "enableSetPasswordInApi": true
+        }
+      },
+      "mobileSettings": {
+        "enableS1EncryptedStoragePref2": false
+      }
     }
-}
+  }
+  

@@ -13,7 +13,7 @@ echo "we will now generate the certificates, press enter to continue"
 openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
 echo "the key will now be encoded in BASE64 and displayed, use the output for the value of SFDC_SERVER_KEY enviornment variable"
 echo "/n"
-base64 server.key
+base64 -i server.key
 echo "we will now clean up, keys will be deleted"
 rm server.csr
 rm server.key
